@@ -1,8 +1,11 @@
+const products = require ('./src/products')
+
 module.exports = {
   siteMetadata: {
-    title: `Gatsby Default Starter`,
+    title: `eshop`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `@gatsbyjs`,
+    products: [...products]
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -15,6 +18,23 @@ module.exports = {
     },
     `gatsby-transformer-sharp`,
     `gatsby-plugin-sharp`,
+    {
+      resolve:`gatsby-source-datocms`,
+      options:{
+        apiToken: `9e4b4e18f1669703a8236ab417418f`
+      }
+    },
+
+    {
+      resolve:`gatsby-plugin-snipcart`,
+      options:{
+        apiKey: `MTBmZmRmZTItMzNjZS00MmI3LTg3ZjUtNTM5N2I5ODkzMjRkNjM3NDQ4NDY4NDkwMjUyMDA2`,
+        autopop:true,
+        js:'https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.js',
+        jquery:false,
+        styles:'https://cdn.snipcart.com/themes/v3.0.27/default/snipcart.css'
+      }
+    },    
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
