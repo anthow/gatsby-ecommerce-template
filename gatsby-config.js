@@ -24,7 +24,12 @@ module.exports = {
         apiToken: `9e4b4e18f1669703a8236ab417418f`
       }
     },
-
+    {
+      resolve: 'gatsby-plugin-html-attributes',
+      options: {
+        lang: 'fr'
+      }
+    },
     {
       resolve:`gatsby-plugin-snipcart`,
       options:{
