@@ -7,7 +7,7 @@ sections:
 - type: document
   path: src\pages\index.js
   label: accueil
-  match: "**/*"
+  read_only: false
 upload_dir: template_ecommerce
 public_path: template_ecommerce
 front_matter_path: ''
