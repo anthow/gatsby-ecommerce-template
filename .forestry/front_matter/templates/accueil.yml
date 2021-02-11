@@ -1,4 +1,9 @@
 ---
 label: accueil
 hide_body: false
-fields: []
+fields:
+- name: titre_de_la_page
+  type: text
+  config:
+    required: false
+  label: titre de la page
