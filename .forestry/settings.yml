@@ -3,7 +3,11 @@ new_page_extension: md
 auto_deploy: false
 admin_path: 
 webhook_url: 
-sections: 
+sections:
+- type: document
+  path: src\pages\index.js
+  label: accueil
+  match: "**/*"
 upload_dir: template_ecommerce
 public_path: template_ecommerce
 front_matter_path: ''
