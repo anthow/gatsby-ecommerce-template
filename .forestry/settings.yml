@@ -4,10 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
+- type: directory
   path: src\pages\index.js
   label: accueil
-  read_only: false
+  create: documents
+  match: "**/*"
 upload_dir: template_ecommerce
 public_path: template_ecommerce
 front_matter_path: ''
